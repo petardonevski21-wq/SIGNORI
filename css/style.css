@@ -78,8 +78,8 @@ body {
 }
 
 .content h2 {
-    font-size: 1.9rem;
-    font-weight: 400;
+    font-size: 2.0rem;
+    font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
@@ -101,18 +101,18 @@ body {
     width: 100%;
     height: 1px;
     background-color: #fff;
-    transform: scaleX(1);
-    transform-origin: center;
+    transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.4s ease;
 }
 
 /* Hover Анимации */
 .split-pane:hover .bg-overlay {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .split-pane:hover .link-btn::after {
-    transform: scaleX(0);
+    transform: scaleX(1);
 }
 
 /* Основен CSS hover scale (JavaScript ќе го надгради ова) */
@@ -239,4 +239,3 @@ body {
 .footer-legal a:hover {
     color: #ccc;
 }
-
